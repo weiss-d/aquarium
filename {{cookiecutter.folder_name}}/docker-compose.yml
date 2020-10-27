@@ -7,11 +7,11 @@
 {% set tor = cookiecutter.tor | int %}
 {% set verbosity = cookiecutter.splash_verbosity %}
 
-version: '2'
+version: '3'
 
 services:
     haproxy:
-        image: haproxy:1.7
+        image: haproxy:latest
         ports:
             # stats
             - "8036:8036"
